@@ -1,0 +1,14 @@
+== Compile ==
+	$ make 
+
+== Add execute permission ==
+	$ chmod u+x ins-latency.sh
+	$ chmod u+x rm-latency.sh
+
+==	Load module ==
+	$ su
+	# ./ins-latency.sh
+
+== Unload module ==
+	# ./rm-latency.sh
+
