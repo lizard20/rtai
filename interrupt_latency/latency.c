@@ -5,6 +5,8 @@
 		Module
 	Description:
 		Install ISR to measure interrupt latency.
+		An external  interrupt signal  is connected to parallel
+		port (pin 10). Then we get the response in pin 2.
 	Author:
 		Aldo Núñez Tovar	
 	License:
@@ -15,8 +17,8 @@
 #include <linux/init.h>
 #include <rtai.h>
 
-#define IRQ 7
-#define BASEPORT 0x378
+#define IRQ 7				 	/* Parallel port interrupt number */
+#define BASEPORT 0x378			/* Parallel port address */
 #define CONT_MAX 10000
 
 MODULE_AUTHOR ( "Aldo Núñez Tovar" );
