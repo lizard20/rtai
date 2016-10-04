@@ -23,7 +23,7 @@ MODULE_AUTHOR ( "Aldo Núñez Tovar" );
 MODULE_LICENSE ( "GPL"  );
 MODULE_DESCRIPTION ( "Measuring latency" );
 
-/* Functions prototypes */
+/* Function prototypes */
 static int __init insert_module ( void );
 static void __exit remove_module ( void );
 static void isr_handler ( void ); 
